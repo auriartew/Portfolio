@@ -1,0 +1,1 @@
+This portfolio website was bootstrapped with create-react-app.
