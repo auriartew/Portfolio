@@ -17,12 +17,13 @@ export default function Home() {
                 <div className="right-space">
                     <div className="intro-content">
                         <p className="intro-text">
-                            I'm a <strong>Web Developer </strong> 
-                            who is passionate about making the web a more accessible space for everyone.
+                            I'm a Full Stack developer 
+                            who is dedicated to delivering high-quality, scalable, 
+                            predictable, and high-performance web applications.
                             <em> Perfectionist</em>, <em>Enthusiastic</em> and always <em>
                                 Optimistic</em>.
                         </p>
-                        <a className="btn" href="#"><span>My CV</span></a>
+                        <a className="btn" href="https://www.keepandshare.com/doc21/113919/resume-2021-pdf-555k?da=y"><span>Resume</span></a>
                     </div>
                     <div className="link-box-container">
                         <a href="#about"><div className="link-box">About</div></a>
@@ -35,7 +36,7 @@ export default function Home() {
                 <div className="left-space">
                     <div className="about-content">
                         <h1>"Don’t wish it were easier. Wish you were better."</h1>
-                        <p>I am a driven full-stack developer from South Florida.
+                        <p>I am a driven web developer from South Florida.
                             I enjoy turning complex problems into elegant solutions.
                             I take pride in producing efficient, well-organized code
                             that future devs can read with ease.
@@ -52,8 +53,9 @@ export default function Home() {
                 <div className="right-space">
                     <div className="link-box"></div>
                     <div className="link-box">
-                        <p>There is nothing I <i>can't</i> do. The only limits are how long I've spent Googling
-                        a problem.</p></div>
+                        <p>There is nothing I <i>can't</i> do. With enough dedication and work, 
+                        no problem is too complex to solve.</p>
+                        </div>
                     <div className="link-box"></div>
                 </div>
             </div>
@@ -61,27 +63,25 @@ export default function Home() {
                 <div className="left-space">
                     <h2>Work Experience</h2>
                     <div className="work-content">
-                        
-                        
                         <h3>Web Administration Team</h3>
-                        Florida Department of Health, Office of Information Technology, 
-                        Tallahassee, FL
+                        <p>Florida Department of Health</p> 
+                        <p className="location">Tallahassee, FL</p>
                         
                         <ul>
                             <li>
-                            Designed and developed an internal web application for managing the Web Administration Team’s Domain Name and Certificate Databases using JavaScript, HTML5, CSS3 + Bootstrap, NodeJS, and MongoDB Realm.
+                            Designed, developed, and deployed an internal web application for managing the Web Administration Team’s Domain Name and Certificate Databases using JavaScript, HTML5, CSS3 + Bootstrap, NodeJS, and MongoDB Realm.
                             </li>
                             <li>
-                            Migrated Access database into MongoDB and set up Atlas environment.  
+                            Configured, administer, and actively manage Atlas cloud environment in MongoDB.  
                             </li>
                             <li>
-                            Conduct accessibility reviews of all external sites and web content within the DOH. 
+                            Created an FDOH Genealogy protype site using NodeJS, Microsoft Azure, MongoDB, ReactJS, HTML5, and CSS3.
                             </li>
                             <li>
-                            Identify, advise, and implement accessibility changes for WCAG 2.0 compliance.
+                            Provide technical advising to meet customer requirements and develop client requested solutions from concept to code.
                             </li>
                             <li>
-                            Monitor functionality and accessibility of internal and external websites.
+                            Review services offered by Microsoft Azure and provide recommendations based on project requirements.
                             </li>
                         </ul>
                     </div>
@@ -139,8 +139,8 @@ export default function Home() {
             </div>
             <div className="contact-info">
                 <a href="mailto:gina.auw@gmail.com"><div className="link-box">gina.auw@gmail.com</div></a>
-                <a href="#tba"><div className="link-box">Gitlab</div></a>
-                <a href="#tba"><div className="link-box">LinkedIn</div></a>
+                <a href="https://github.com/auriartew/Portfolio"><div className="link-box">Gitlab</div></a>
+                <a href="https://www.keepandshare.com/doc21/113919/resume-2021-pdf-555k?da=y"><div className="link-box">Resume</div></a>
             </div>
                 
             </div>
