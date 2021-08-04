@@ -69,7 +69,7 @@ export default function Skills() {
                 <div className="items">
                     <div className="column">
                         <p>Siteimprove</p>
-                        <p>NVDIA Screen reader</p>
+                        <p>NVDA Screen reader</p>
                         <p>Adobe XD</p>
                     </div>
                 </div>
