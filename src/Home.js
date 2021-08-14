@@ -126,6 +126,11 @@ export default function Home() {
                         <ul>
                             <li>Developed a pilot site for a potential Geneology site for Florida Residents</li>
                             <li>Front-end developed in ReactJS, HTML5, CSS3, and Javascript</li>
+                            <li>Back-end using Azure functions API and Azure static web apps</li>
+                            <a target="_blank" rel="noopener noreferrer" className="demo-btn" href="https://lively-hill-0d8298410.azurestaticapps.net/">Click to see the demo</a>
+                            <p><small>*Please note that many features will not work 
+                                due to authentication being restricted to FDOH users.</small>
+                            </p>
                         </ul>
                     </div>
                     <div className="text-right">
