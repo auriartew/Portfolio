@@ -90,8 +90,8 @@ body {
   width: 100%;
   color: var(--light-text-color);
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  position: relative;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -134,6 +134,7 @@ header.intro-container {
   font-size: 300%;
   font-weight: 800;
   max-width: 100%;
+  
 }
 
 .right-space {
@@ -147,8 +148,31 @@ header.intro-container {
   max-height: inherit;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .intro-container .middle-space {
   background: var(--yellow-base);
+  position: relative;
+  animation: slide-down 1.5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+  0% {
+    top: -42rem;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .intro-content {
@@ -158,6 +182,11 @@ header.intro-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  opacity: 0;
+  animation: fade-in 2.5s ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 .intro-text {
@@ -177,11 +206,14 @@ header.intro-container {
   position: relative;
   top: 2rem;
   color: var(--yellow-base);
-  transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out,
+  box-shadow 1s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .intro-content a.btn:hover {
   background-color: transparent;
+  box-shadow: none;
 }
 
 .link-box-container, .contact-info {
@@ -191,7 +223,20 @@ header.intro-container {
   height: 100%;
   flex: 2;
   flex-grow: 2;
+  position: relative;
+  animation: slide-from-right 1.5s ease;
+  animation-fill-mode: forwards;
 }
+
+@keyframes slide-from-right {
+  0% {
+    right: -100vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+
 .link-box-container a,
 .contact-info a {
   background-color: var(--pink-base);
@@ -201,9 +246,11 @@ header.intro-container {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  transition: background-color 1s ease-in-out;
-  color: white;
+  transition: background-color 1s ease-in-out,
+  box-shadow 1s ease-in-out;
+  color: var(--yellow-base);
   font-size: 1.2em;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .link-box-container a:nth-child(2) {
@@ -213,6 +260,7 @@ header.intro-container {
 
 .link-box-container a:hover {
   background-color: transparent;
+  box-shadow: none;
 }
 
 
@@ -298,7 +346,7 @@ header.intro-container {
 
 
 div.work {
-  background-image: url('images/desk.jpg');
+  background-image: url('https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -307,6 +355,9 @@ div.work {
 }
 
 .work .left-space .work-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--blue-base);
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   height: 50%;
@@ -316,10 +367,10 @@ div.work {
   top: 10%;
   padding: 3rem;
   color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .work .left-space h2 {
-  color: white;
   position: relative;
   font-size: 40px;
   width: 140%;
@@ -330,6 +381,10 @@ div.work {
 
 .work .left-space h3 {
   margin-bottom: 1rem;
+  color: var(--pink-base);
+  font-weight: normal;
+  font-size: 1.4rem;
+  font-family: sans-serif;
 }
 
 .work .left-space p.location {
@@ -360,6 +415,7 @@ div.projects .text-container {
   flex-direction: row;
   flex-wrap: wrap;
   height: 30rem;
+
 }
 
 div.projects .text-left {
@@ -371,6 +427,7 @@ div.projects .text-left {
   z-index: 1;
   padding: 3rem;
   flex-grow: 2;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .projects .text-left h3 {
@@ -404,7 +461,7 @@ div.projects .text-right {
   flex-grow: 1;
   width: 15rem;
   position: relative;
-  top: -18rem;
+  top: -15rem;
   left: 14rem;
   background-color: lightblue;
   background-blend-mode: color-burn;
@@ -414,6 +471,7 @@ div.projects .text-right {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .text-right .icon-container {
@@ -453,6 +511,7 @@ div.ksa {
 
 .contact-info a {
   background-color: var(--blue-base);
+  color: white;
 }
 
 .contact-info a:nth-child(2) {
@@ -555,7 +614,6 @@ p.employer {
 
 
 /* /About page */
-
 /* 9- Skills page */
 
 .skill-title {
@@ -582,7 +640,7 @@ p.employer {
 
 .detailed-skills > h2 {
   font-family: 'Roboto Condensed', sans-serif;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.em;
   margin-top: 3rem;
   opacity: 0.9;
 }
@@ -599,13 +657,15 @@ p.employer {
 
 .items .column p {
   margin-top: 2rem;
+  margin-bottom: 0.1rem;
 }
 
 .skill-bar {
   width: 90%;
   background-color: #ddd;
- 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   margin-bottom: 0.5em;
+
 }
 
 .skills {
