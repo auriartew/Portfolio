@@ -1009,6 +1009,10 @@ p.employer {
     margin-bottom: 0.75rem;
   }
 
+  .text-right {
+    padding-bottom: 2rem;
+  }
+
   .ksa {
     position: relative;
     z-index: 1;

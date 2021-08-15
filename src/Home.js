@@ -32,7 +32,7 @@ export default function Home() {
                     </div>
                 </div>
             </header>
-            <div className="about">
+            <div className="about" id="about">
                 <div className="left-space">
                     <div className="about-content">
                         <h1>"Don’t wish it were easier. Wish you were better."</h1>
@@ -47,7 +47,7 @@ export default function Home() {
 
                     </div>
                 </div>
-                <div className="middle-space" id="about">
+                <div className="middle-space">
                     
                 </div>
                 <div className="right-space">
