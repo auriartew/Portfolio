@@ -35,7 +35,7 @@ export default function Home() {
             <div className="about" id="about">
                 <div className="left-space">
                     <div className="about-content">
-                        <h1>"Don’t wish it were easier. Wish you were better."</h1>
+                        <h1>I code all day</h1>
                         <p>I am a driven web developer from South Florida.
                             I enjoy turning complex problems into elegant solutions.
                             I take pride in producing efficient, well-organized code
@@ -53,52 +53,43 @@ export default function Home() {
                 <div className="right-space">
                     <div className="link-box"></div>
                     <div className="link-box">
-                        <p>There is nothing I <i>can't</i> do. With enough dedication and work, 
-                        no problem is too complex to solve.</p>
+                        <p>and code all night</p>
                         </div>
                     <div className="link-box"></div>
                 </div>
             </div>
             <div className="work" id="work">
-                <div className="left-space">
-                    <h2>Work Experience</h2>
-                    <div className="work-content">
-                        <h3>Web Administration Team</h3>
-                        <p>Florida Department of Health</p> 
-                        <p className="location">Tallahassee, FL</p>
-                        
-                        <ul>
-                            <li>
-                            Designed, developed, and deployed an internal web application for managing the Web Administration Team’s Domain Name and Certificate Databases using JavaScript, HTML5, CSS3 + Bootstrap, NodeJS, and MongoDB Realm.
-                            </li>
-                            <li>
-                            Configured, administer, and actively manage Atlas cloud environment in MongoDB.  
-                            </li>
-                            <li>
-                            Created an FDOH Genealogy protype site using NodeJS, Microsoft Azure, MongoDB, ReactJS, HTML5, and CSS3.
-                            </li>
-                            <li>
-                            Provide technical advising to meet customer requirements and develop client requested solutions from concept to code.
-                            </li>
-                            <li>
-                            Review services offered by Microsoft Azure and provide recommendations based on project requirements.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="middle-space">
+                <div className="work-content">
+                    <h3>Web Team</h3>
+                    <p>Florida Department of Health</p> 
+                    <p className="location">Tallahassee, FL</p>
                     
+                    <ul>
+                        <li>
+                        Designed, developed, and deployed an internal web application for managing the Web Administration Team’s Domain Name and Certificate Databases using JavaScript, HTML5, CSS3 + Bootstrap, NodeJS, and MongoDB Realm.
+                        </li>
+                        <li>
+                        Configured, administer, and actively manage Atlas cloud environment in MongoDB.  
+                        </li>
+                        <li>
+                        Created an FDOH Genealogy protype site using NodeJS, Microsoft Azure, MongoDB, ReactJS, HTML5, and CSS3.
+                        </li>
+                        <li>
+                        Provide technical advising to meet customer requirements and develop client requested solutions from concept to code.
+                        </li>
+                        <li>
+                        Review services offered by Microsoft Azure and provide recommendations based on project requirements.
+                        </li>
+                    </ul>
                 </div>
-                <div className="right-space">
-                    <div className="link-box"></div>
-                    <div className="link-box"></div>
-                    <div className="link-box"></div>
-                </div>
+                <h2>Work Experience</h2>
+ 
+                
             </div>
             <div className="projects">
-                <div className="text-container">
+            <h2>Projects</h2>
+
                     <div className="text-left" id="projects">
-                        <h2>Projects</h2>
                         <h3>UriarteVisa.com</h3>
                         <p>July 2020 to Present</p>
                         <ul>
@@ -133,10 +124,8 @@ export default function Home() {
                             </p>
                         </ul>
                     </div>
-                    <div className="text-right">
-                        <div className="icon-container"><img src={icosahedron} alt="" className="filter-green"></img></div>
-                    </div>
-                </div>
+                    
+                
                 
             </div>
             <div className="ksa">

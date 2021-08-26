@@ -15,7 +15,7 @@ export default function Skills() {
                         </div>
                         <p>CSS</p>
                         <div class="skill-bar">
-                            <div class="skills css">70%</div>
+                            <div class="skills css">80%</div>
                         </div>
                         <p>JavaScript</p>
                         <div class="skill-bar">
@@ -33,7 +33,7 @@ export default function Skills() {
                         </div>
                         <p>jQuery</p>
                         <div class="skill-bar">
-                            <div class="skills jquery">70%</div>
+                            <div class="skills jquery">60%</div>
                         </div>
                     </div>
                 </div>

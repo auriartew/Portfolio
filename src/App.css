@@ -89,7 +89,7 @@ html,
 body {
   width: 100%;
   color: var(--light-text-color);
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Roboto";
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -130,7 +130,7 @@ header.intro-container {
   position: relative;
   top: 10%;
   color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Raleway", open-sans;
   font-size: 300%;
   font-weight: 800;
   max-width: 100%;
@@ -195,7 +195,6 @@ header.intro-container {
   line-height: 1.5;
   margin-bottom: 1em;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .intro-content a.btn {
@@ -273,11 +272,8 @@ header.intro-container {
 
 .about {
   min-height: 30rem;
-  max-height: 40rem;
-}
-
-.work {
-  min-height: 75rem;
+  max-height: 70vh;
+  overflow-y: visible;
 }
 
 .about .left-space .about-content {
@@ -291,21 +287,20 @@ header.intro-container {
 
 .about .left-space .about-content h1 {
   margin-bottom: 2rem;
+  font-family: "Raleway", open-sans;
 }
 
 .about .middle-space {
   background-color: transparent;
 }
 
-.about .right-space,
-.work .right-space {
+.about .right-space{
   display: flex;
   flex-direction: row;
   padding: 0;
 }
 
-.about .right-space .link-box,
-.work .right-space .link-box {
+.about .right-space .link-box {
   background-color: var(--pink-base);
   width: 100%;
   display: flex;
@@ -322,14 +317,16 @@ header.intro-container {
 .about .right-space .link-box p {
   position: relative;
   color: var(--light-text-color);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  width: 80%;
+  font-size: 2.5rem;
+  margin-top: -80%;
+  writing-mode: vertical-rl;
+  
 }
 
 .about .right-space .link-box:nth-child(2){
   background-color: var(--mint-base);
   z-index: 100;
+  min-height: 110vh;
 }
 
 
@@ -344,39 +341,48 @@ header.intro-container {
   height: 100%;
 }
 
-
+/* Work section */
 div.work {
   background-image: url('https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   box-shadow:inset 0 0 0 2000px rgba(69, 160, 117, 0.2);
-  
+  min-height: 110vh;
+  height: auto;
+  z-index: -1;
 }
 
-.work .left-space .work-content {
+.work .work-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex;
   background-color: var(--blue-base);
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  height: 50%;
-  width: 200%;
+  height: fit-content;
+  min-width: 10vw;
+  max-width: 40vw;
+  width: auto;
   overflow: visible;
-  position: relative;
-  top: 10%;
+  margin-top: 7%;
+  margin-left: 5%;
+  margin-bottom: 3%;
   padding: 3rem;
   color: white;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.work .left-space h2 {
-  position: relative;
-  font-size: 40px;
-  width: 140%;
-  top: 7%;
-  left: 10%;
-  font-family: Arial, Helvetica, sans-serif;
+.work-content h3 {
+  font-family: "Raleway";
+  font-size: 2rem;
+}
+
+.work h2 {
+  margin-top: 20%;
+  margin-left: 14.5%;
+  color: linen;
+  font-size: 5rem;
+  max-width: 30vw;
+  
 }
 
 .work .left-space h3 {
@@ -387,47 +393,41 @@ div.work {
   font-family: sans-serif;
 }
 
-.work .left-space p.location {
+.work p.location {
   margin-bottom: 1.2rem;
 }
 
-.work .left-space .work-content li {
+.work .work-content li {
   list-style-type: disc;
 }
 
-.work .link-box:nth-child(2) {
-  background-color: var(--mint-base);
-  height: 20%;
-  opacity: 0.85;
-  
-}
+/* Work section */
+
+/* Project section */
 
 div.projects {
-  height: 48rem;
-  background-color: linen;
+  height: auto;
+  background-color: var(--blue-base);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  z-index: 1;
 }
 
-div.projects .text-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 30rem;
-
+.projects h2 {
+  max-width: 40%;
+  font-size: 4rem;
+  margin-right: 10%;
+  margin-left: 6%;
+  margin-top: 12%;
 }
 
 div.projects .text-left {
   background-color: linen;
-  width: 35rem;
-  position: relative;
-  top: -5rem;
-  left: 14rem;
-  z-index: 1;
-  padding: 3rem;
-  flex-grow: 2;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  max-width: 37rem;
+  z-index: 2;
+  margin-left: 15%;
+  margin-top: -3%;
+  padding: 1rem 3rem;
+  
 }
 
 .projects .text-left h3 {
@@ -457,22 +457,7 @@ div.projects .text-left {
   background-color: transparent;
 }
 
-div.projects .text-right {
-  flex-grow: 1;
-  width: 15rem;
-  position: relative;
-  top: -15rem;
-  left: 14rem;
-  background-color: lightblue;
-  background-blend-mode: color-burn;
-  opacity: 0.8;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
+
 
 .text-right .icon-container {
   margin-top: 2rem;
@@ -546,7 +531,6 @@ div.ksa {
 .work-experience div.line {
   position: relative;
   top: -2.2rem;
-  left: 38%;
   display: block;
   width: 40rem;
   height: 0.5px;
@@ -686,11 +670,11 @@ p.employer {
   }
 
 .css {
-  width: 70%; 
+  width: 80%; 
   background-color: rgb(74, 194, 202);
-  animation: css 2s ease-out;
-  -moz-animation: css 2s ease-out;
-  -webkit-keyframes: css 2s ease-out;
+  animation: eighty 2s ease-out;
+  -moz-animation: eighty 2s ease-out;
+  -webkit-keyframes: eighty 2s ease-out;
 }
 .js {
   width: 85%; 
@@ -714,11 +698,11 @@ p.employer {
   -webkit-keyframes: html5 2s ease-out;
 }
 .jquery {
-  width: 70%; 
+  width: 60%; 
   background-color: rgb(74, 194, 202);;
-  animation: css 2s ease-out;
-  -moz-animation: css 2s ease-out;
-  -webkit-keyframes: css 2s ease-out;
+  animation: sixty 2s ease-out;
+  -moz-animation: sixty 2s ease-out;
+  -webkit-keyframes: sixty 2s ease-out;
 }
 
 .nodejs {
@@ -856,6 +840,32 @@ p.employer {
 }
 
 
+@keyframes sixty {
+  0% {
+    width: 0px;
+  }
+  100% {
+      width: 60%;
+  };
+}
+@-moz-keyframes sixty {
+  0% {
+      width: 0px;
+  }
+  100% {
+      width: 60%;
+  };
+}
+
+@-webkit-keyframes sixty {
+  0% {
+    width: 0px;
+  }
+  100% {
+      width: 60%;
+  };
+}
+
 @keyframes fifty {
   0% {
     width: 0px;
@@ -954,7 +964,8 @@ p.employer {
     align-items: center;
     flex-grow: unset;
   }
-  .work .left-space h2 {
+  .work h2 {
+    position: absolute;
     text-align: center;
     top: 0;
     left: 0;
