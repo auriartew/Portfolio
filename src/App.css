@@ -247,6 +247,7 @@ header.intro-container {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
   transition: all 1s ease-in-out;
   color: var(--yellow-base);
   font-size: 1.5em;
