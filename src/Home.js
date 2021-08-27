@@ -65,21 +65,18 @@ export default function Home() {
                     <p className="location">Tallahassee, FL</p>
                     
                     <ul>
+                        <li>Lead application developer of custom internal application to modernize Certificate and Domain Name management process</li>
                         <li>
-                        Designed, developed, and deployed an internal web application for managing the Web Administration Team’s Domain Name and Certificate Databases using JavaScript, HTML5, CSS3 + Bootstrap, NodeJS, and MongoDB Realm.
+                        Designed, developed, and deployed an internal web application for the Web Team’s Domain Name and Certificate management process using JavaScript, HTML5, CSS3 + Bootstrap, NodeJS, and MongoDB Realm.
                         </li>
                         <li>
                         Configured, administer, and actively manage Atlas cloud environment in MongoDB.  
                         </li>
+                        <li>Administered database access roles and set up authentication using a custom solution with Microsoft MSAL authentication and MongoDB Realm.</li>
                         <li>
-                        Created an FDOH Genealogy protype site using NodeJS, Microsoft Azure, MongoDB, ReactJS, HTML5, and CSS3.
+                        Created an FDOH Genealogy site using NodeJS, Azure Functions, MongoDB, ReactJS, HTML5, and CSS3.
                         </li>
-                        <li>
-                        Provide technical advising to meet customer requirements and develop client requested solutions from concept to code.
-                        </li>
-                        <li>
-                        Review services offered by Microsoft Azure and provide recommendations based on project requirements.
-                        </li>
+                        
                     </ul>
                 </div>
                 <h2>Work Experience</h2>
@@ -93,31 +90,36 @@ export default function Home() {
                         <h3>UriarteVisa.com</h3>
                         <p>July 2020 to Present</p>
                         <ul>
-                            <li>Designed responsive, mobile-friendly business landing page
-                                and contact form
+                            <li>Building full stack application to automate a legal filing process
                             </li>
-                            <li>Created an Express server to handle form submission and send an email
-                                to customers following signup
+                            <li>Developing user interface using ReactJS, Material UI, and custom CSS 
+                            </li>
+                            <li>Developing express server and PostgreSQL database to handle all
+                                form submissions
                             </li>
                             <li>Deployed the website using an EC2 container in AWS</li>
-                            <li>Currently developing user authentication backend and database pipeline
-                                in DynamoDB
-                            </li>
+                            
                         </ul>
                         <h3>Certificate and Domain Name Management Application</h3>
                         <ul>
-                            <li>Lead project manager in migrating Access database in MongoDB Atlas</li>
-                            <li>Modernized outdated Certificate and Domain Name management process
-                                by architecting a custom application
+                            <li>Lead application developer of custom internal application to
+                                modernize Certificate and Domain Name management process                            
                             </li>
-                            <li>Built backend database and serverless functions in MongoDB Realm</li>
-                            <li>Front-end user interface designed using HTML5, CSS3, and JavaScript</li>
+                            <li>Setup MongoDB Atlas environment and performed a database migration</li>
+                            <li>Administered database access roles and set up authentication
+                                using a custom solution with Microsoft MSAL authentication and MongoDB Realm</li>
+                            <li>Developed custom serverless functions in MongoDB Realm
+                                to handle database queries
+                            </li>
+                            <li>Designed and developed user interface  
+                                using HTML5, CSS3, and JavaScript and integrated it with the backend in
+                                MongoDB Realm</li>
                         </ul>
                         <h3>Florida Department of Health Ancestry Prototype</h3>
                         <ul>
-                            <li>Developed a pilot site for a potential Geneology site for Florida Residents</li>
+                            <li>Developed a single-page application for a Geneology site</li>
                             <li>Front-end developed in ReactJS, HTML5, CSS3, and Javascript</li>
-                            <li>Back-end using Azure functions API and Azure static web apps</li>
+                            <li>Back-end using Azure functions API, Azure static web apps, and Microsoft MSAL authentication</li>
                             <a target="_blank" rel="noopener noreferrer" className="demo-btn" href="https://lively-hill-0d8298410.azurestaticapps.net/">Click to see the demo</a>
                             <p><small>*Please note that many features will not work 
                                 due to authentication being restricted to FDOH users.</small>
