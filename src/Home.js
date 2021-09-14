@@ -136,7 +136,7 @@ export default function Home() {
             <div className="contact-info">
                 <a href="mailto:gina.auw@gmail.com"><div className="link-box">gina.auw@gmail.com</div></a>
                 <a href="https://github.com/auriartew/Portfolio"><div className="link-box">Github</div></a>
-                <a href="https://www.keepandshare.com/doc21/113919/resume-2021-pdf-555k?da=y"><div className="link-box">Resume</div></a>
+                <a href="https://www.keepandshare.com/doc21/114040/resume-5-pdf-45k?da=y"><div className="link-box">Resume</div></a>
             </div>
                 
             </div>
