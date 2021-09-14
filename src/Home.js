@@ -23,7 +23,7 @@ export default function Home() {
                             <em> Perfectionist</em>, <em>Enthusiastic</em> and always <em>
                                 Optimistic</em>.
                         </p>
-                        <a className="btn" href="https://www.keepandshare.com/doc21/113919/resume-2021-pdf-555k?da=y"><span>Resume</span></a>
+                        <a className="btn" href="https://www.keepandshare.com/doc21/114040/resume-5-pdf-45k?da=y"><span>Resume</span></a>
                     </div>
                     <div className="link-box-container">
                         <a href="#about"><div className="link-box">About</div></a>
